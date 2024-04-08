@@ -1,0 +1,133 @@
+/* all elements */
+* {
+    box-sizing: border-box;
+    /* default */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #333;
+    /* distance beteween elements */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Nav styling */
+nav {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* 0 shadowing top, 2 left and right, 4 bottom */
+    box-shadow: 0 2px 4px black;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    display: flex; /* flex box layout */
+    justify-content: center; /* Center nav horizontally */
+}
+
+nav ul {
+    list-style-type: none; /* would add symbol before nav item, may be unnecessary */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Adds space between nav items */
+}
+
+nav ul li {
+    background: lightgray; /* Light grey background for each nav item */
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+nav ul li:hover {
+    background: #8d8d8d; /* Darker grey on hover */
+}
+
+nav ul li a {
+    text-decoration: none; /* special effects on text (eg. underline, etc) */
+    color: #333;
+    font-weight: 600;
+}
+
+/* Form styling */
+form {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* 0 shadowing top, 2 left and right, 4 bottom */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* right underneath fieldset, text above input fields specifying course/category/assignment/grade number */
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
+/* input fields in form */
+input[type="text"],
+input[type="number"] {
+    /* 22 px less than full screen */
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* submit button styling */
+input[type="submit"] {
+    background-color: rgb(55, 188, 55);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #5D93E1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* top and bottom 10px, right and left 20px */
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+/* changes color on mouse hover */ 
+button:hover {
+    background-color: #3C7DC4;
+}
+
+/* remove button color styling */
+.remove {
+    background-color: #ff6347;
+}
+
+/* changes color on mouse hover */ 
+.remove:hover {
+    background-color: #d9534f;
+}
+
+/* Dynamic elements visibility */
+.totalCategories,
+.totalAssignments {
+    margin-bottom: 20px;
+}
+
