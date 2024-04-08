@@ -1,6 +1,6 @@
-# M3OEP-sgmalik-rbumpas
+# Grade Calculator
 
-WEBSITE LINK: https://sgmalik.w3.uvm.edu/cs2300/M3OEP-sgmalik-rbumpas/gpa.php
+WEBSITE LINK: https://sgmalik.w3.uvm.edu/Grade-Calculator/gpa.php
 
 - River Bumpas and Surya Malik
 - No added installations
@@ -21,6 +21,4 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
 https://www.geeksforgeeks.org/css-tutorial/  
 https://www.w3schools.com/cssref/css_selectors.php  
 https://www.w3schools.com/whatis/  
-
-- Grade Earned: We think that we earned 100+ points for this project. Our main program is complex and interactive and functioning correctly (40 pts). We use multiple languages (20 pts), and they all are incorporated to utilize their strengths (20 pts). We also used command line arguments in our Python file to receive the data (20 pts). Finally, we took a deeper dive into a language that neither of us had experience in, Javascript, and it was an essential part of our program (10 - 20 pts). This brings our total points to 110 - 120 points. 
 
