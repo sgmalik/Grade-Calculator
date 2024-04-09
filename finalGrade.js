@@ -119,7 +119,7 @@ function validateWeight() {
             totalWeight += parseFloat(weightInput.value) || 0;
         });
 
-        if (totalWeight !== 1) {
+        if (totalWeight !== 1.0) {
             isValid = false;
         }
     });
@@ -127,6 +127,7 @@ function validateWeight() {
     return isValid; // Return the overall validation result
 
 }
+
 
 function validateCourse() {
     const courses = document.getElementById('totalCourses').children;
@@ -147,3 +148,4 @@ function validateCourse() {
 
     return isValid;
 }
+
