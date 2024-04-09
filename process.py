@@ -105,7 +105,7 @@ def calculate_final_grade(courses):
                 totalPoints = totalPoints + courses[i][1][j][2][k][1]
             weightedAverage = (totalPoints / numAssignments) * catWeight
             totalWeightedAverage = totalWeightedAverage + weightedAverage
-        averages.append(totalWeightedAverage)
+        averages.append([courses[i][0], totalWeightedAverage])
     return averages
 
 if __name__ == "__main__":
@@ -120,6 +120,8 @@ if __name__ == "__main__":
     if (test[1] == "GPA"):
         print(calculate_gpa(test[0]))
     elif (test[1] == "GRADE"):
-        print(calculate_final_grade(test[0]))
+        data = calculate_final_grade(test[0])
+        for i in range(0, len(data)):
+            print(f"\n{data[i][0]}: {data[i][1]}")
     
 

@@ -60,7 +60,7 @@
 
                     $output = shell_exec("python3 $python_script $file");
 
-                    echo 'Your average(s) are: ' .$output;
+                    echo 'Your average(s) are: <br>' . nl2br($output);
                 ?>
             </h2>
         </main>  
