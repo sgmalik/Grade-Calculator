@@ -46,7 +46,7 @@ def handle(file_path):
                 category_info = line.split(',')
                 category_name = category_info[0]
                 category_weight = float(category_info[1])
-                assignments = [(category_info[i], int(category_info[i + 1])) for i in
+                assignments = [(category_info[i], float(category_info[i + 1])) for i in
                                range(2, len(category_info) - 1, 2)]
 
                 categories.append([category_name, category_weight, assignments])
@@ -122,6 +122,6 @@ if __name__ == "__main__":
     elif (test[1] == "GRADE"):
         data = calculate_final_grade(test[0])
         for i in range(0, len(data)):
-            print(f"\n{data[i][0]}: {data[i][1]}")
+            print(f"\n{data[i][0]}: {data[i][1]:.2f}")
     
 

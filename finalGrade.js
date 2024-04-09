@@ -112,14 +112,14 @@ function validateWeight() {
     let isValid = true;
 
     Array.from(courses).forEach((courseDiv, courseIndex) => {
-        let totalWeight = 0;
+        let totalWeight = 0.0;
         const weights = courseDiv.querySelectorAll("input[name^='courses[" + (courseIndex + 1) + "]'][name$='[weight]']");
         // selects all inputs with name starting with courses concatenated to the index plus 1 because of 0 indexing, also checks if name end with '[weight]' to ensure it's pulling the weight field 
         weights.forEach(weightInput => {
-            totalWeight += parseFloat(weightInput.value) || 0;
+            totalWeight += parseFloat(weightInput.value);
         });
 
-        if (totalWeight !== 1.0) {
+        if (Math.abs(totalWeight - 1.0) > 0.00001) {
             isValid = false;
         }
     });
