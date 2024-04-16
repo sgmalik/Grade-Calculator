@@ -2,11 +2,11 @@
 
 WEBSITE LINK: https://sgmalik.w3.uvm.edu/Grade-Calculator/gpa.php
 
-- River Bumpas and Surya Malik
+- Surya Malik
 - No added installations
-- Our program is a website that currently allows users to enter course grades and return a GPA. We are also working on a final grade calculator tab that we did not have time to fully implement for this Module
-- Our program uses HTML, Javascript, PHP, CSS, and Python
-- We used HTML and CSS to create the framework for our website. We then chose to use Javascript to add functionality to our webpage because our website needed to be dynamic so users could enter an unknown number of class grades. We then use PHP to take the data that is entered and send it to Python where the calculations occur, and then the result is sent back using PHP and displayed on the website. 
+- This repo is a collection of files I used to create a final grade and GPA calculator website, hosted on a server provided by my University. It utilizes an HTML, CSS, and Javascript frontend, with dynamic form elements created through event listeners in Javascript. Once the user submits the form of their choosing, the data is parsed in a PHP file (depending on the form that was submitted), formatted, and sent to a .txt file. This .txt file is passed to a Python script using command line arguments which performs the grade/GPA calculation and returns this to PHP which outputs on the webpage. This was my first stab at using Javascript and the first real full-stack project I've ever tried. This project has motivated me to continue experimenting with Javascript and the vast libraries and frameworks within it. The development process was very fascinating and inspired me to create more of these independent, full-stack projects in the future.
+
+- Citations:
 https://www.geeksforgeeks.org/working-csv-files-python/
 https://www.w3schools.com/python/python_file_handling.asp  
 https://www.geeksforgeeks.org/javascript/  
